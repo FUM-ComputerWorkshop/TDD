@@ -5,7 +5,7 @@ public class PalindromeChecker {
             return false;
         }
 
-        String cleanedStr = str.replaceAll("[\\s+.,!?:;]", "").toLowerCase();
+    String cleanedStr = str.replaceAll("[\\s+.,!?:;'\"-]", "").toLowerCase();
         int left = 0;
         int right = cleanedStr.length() - 1;
 
