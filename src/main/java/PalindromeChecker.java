@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PalindromeChecker {
 
     public static boolean isPalindrome(String str) {
@@ -21,6 +23,12 @@ public class PalindromeChecker {
     }
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        System.out.println("Is palindrome: " + isPalindrome(input));
+    }
+
+    private static void simpleTest() {
         String testString = "A man, a plan, a canal, Panama!";
         System.out.println("Is palindrome: " + isPalindrome(testString));
     }
